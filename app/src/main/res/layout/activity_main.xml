@@ -6,36 +6,43 @@
     android:layout_height="match_parent"
     tools:context="com.example.rodneytressler.week2assessment.MainActivity">
 
+    <FrameLayout
+        android:id="@+id/fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="5dp">
 
+    </FrameLayout>
 
     <EditText
-        android:textColor="@android:color/black"
-        android:layout_marginBottom="20dp"
-        android:hint="Enter Name"
         android:id="@+id/input_name"
-        app:layout_constraintBottom_toTopOf="@id/button_register"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <EditText
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toTopOf="@id/button_register"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="20dp"
-        android:hint="Enter Email"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
         android:id="@+id/input_email"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/button_register"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button_register"
-        android:text="Register"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

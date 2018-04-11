@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Week2Assessment</string>
+    <string name="welcome_name">Welcome, %1$s</string>
+    <string name="welcome_email">Please check that your email at %1$s to verify your account!</string>
+    <string name="input_check">Please enter all fields first!</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="register">Register</string>
+    <string name="name_hint">Enter Name</string>
 </resources>
